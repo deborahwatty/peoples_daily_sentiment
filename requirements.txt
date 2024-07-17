@@ -2,4 +2,4 @@ openai
 matplotlib
 python-dotenv
 pandas
-generativeai
+google-generativeai
