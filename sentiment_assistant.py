@@ -155,8 +155,8 @@ class SentimentAssistant:
         df_for_plot = self.df.copy()
 
         # Example of accessing the updated defaultdict
-        for filename, data in results.items():
-            print(f"{filename}: {data}")
+        #for filename, data in results.items():
+        #    print(f"{filename}: {data}")
 
         df_for_plot['sentiment_label'] = df_for_plot['filename'].apply(lambda x: results[x]['label'])
         df_for_plot['date'] = df_for_plot['filename'].apply(lambda x: results[x]['date'])
@@ -192,10 +192,6 @@ class SentimentAssistant:
         for filename, data in results.items():
             # Parse the string as a dictionary
             response_dict = ast.literal_eval(data['response'])
-
-            print("AAAAAAAAAAAA")
-            print(response_dict.keys())
-            print("AAAAAAAAAAAA")
 
             # Extract the label
             label = response_dict['label']
