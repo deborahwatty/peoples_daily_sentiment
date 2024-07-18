@@ -14,7 +14,7 @@ def load_data(year):
 st.title('Keyword Search and Sentiment Analysis')
 
 # Dropdown menus for choosing time frame
-years = list(range(1946, 2017))
+years = list(range(1946, 2024))
 from_year = st.selectbox('From Year', years, index=0)
 to_year = st.selectbox('To Year', years, index=len(years) - 1)
 
